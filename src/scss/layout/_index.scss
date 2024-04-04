@@ -1,1 +1,45 @@
- 
+@use "../../../node_modules/sass-pire/src/sass-pire.scss" as *;
+
+.main {
+    min-height: 100dvh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.faq {
+    max-width: px-to-rem(600);
+    margin: auto;
+    margin-top: px-to-rem(-125);
+    padding: px-to-rem(35);
+    border-radius: px-to-rem(10);
+    position: relative;
+    z-index: 8;
+    background-color: var(--fem-white-clr, #fff);
+
+    &__title {
+        margin-bottom: px-to-rem(16);
+        display: flex;
+        align-items: center;
+        gap: px-to-rem(16);
+
+        svg {
+            animation: rotate 10s ease-in-out infinite both;
+        }
+
+        &__word {
+            color: var(--fem-dark-purple-clr, #000);
+            font-size: var(--accordion-main-title-fs);
+            font-weight: bold;
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

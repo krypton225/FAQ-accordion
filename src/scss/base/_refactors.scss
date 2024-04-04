@@ -31,19 +31,25 @@
 @include mq-gen(min, w, mob-min) {
     :root {
         --accordion-main-title-fs: 1.3rem;
-        --accordion-item-title-fs: 1rem;
-        --accordion-item-desc-fs: 0.8rem;
+        --accordion-item-title-fs: 0.96rem;
+        --accordion-item-desc-fs: 0.9rem;
     }
 }
 
 @include mq-gen(min, w, sm) {
     :root {
-        --accordion-main-title-fs: 1.6rem;
-        --accordion-item-title-fs: 1.3rem;
-        --accordion-item-desc-fs: 1rem;
+        --accordion-main-title-fs: 2.5rem;
+        --accordion-item-title-fs: 1rem;
+        --accordion-item-desc-fs: 0.94rem;
     }
+}
+
+::selection {
+    background-color: var(--fem-grayish-purple-clr);
+    color: var(--fem-white-clr);
 }
 
 body {
     font-family: var(--fem-font-family);
+    background-color: var(--fem-light-pink-clr);
 }
