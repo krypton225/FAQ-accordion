@@ -34,6 +34,30 @@
     }
 }
 
+.bg-image {
+    position: relative;
+
+    .desktop {
+        display: none;
+    }
+
+    @media only screen and (min-width: 376px) {
+        .desktop {
+            display: block;
+        }
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    @media only screen and (max-width: 375px) {
+        .mobile {
+            display: block;
+        }
+    }
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0);
