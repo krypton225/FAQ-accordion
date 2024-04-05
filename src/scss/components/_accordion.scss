@@ -17,10 +17,19 @@
             &:focus {
                 background-color: none;
             }
+
+            .minus {
+                display: none;
+            }
         }
 
         &__bottom {
             padding-top: px-to-rem(10);
+            display: none;
+
+            &.show {
+                display: block;
+            }
 
             .desc {
                 color: var(--fem-grayish-purple-clr);
