@@ -14,7 +14,7 @@
     border-radius: px-to-rem(10);
     position: relative;
     z-index: 8;
-    background-color: var(--fem-white-clr, #fff);
+    background-color: var(--fem-white-clr, #ffffff);
 
     &__title {
         margin-bottom: px-to-rem(16);
@@ -27,9 +27,9 @@
         }
 
         &__word {
-            color: var(--fem-dark-purple-clr, #000);
+            color: var(--fem-dark-purple-clr, #000000);
             font-size: var(--accordion-main-title-fs);
-            font-weight: bold;
+            font-weight: 700;
         }
     }
 }
@@ -41,9 +41,19 @@
         display: none;
     }
 
-    @media only screen and (min-width: 376px) {
+    @media only screen and (width >=376px) {
         .desktop {
+            min-height: px-to-rem(320);
             display: block;
+
+            svg {
+                width: 100%;
+                height: auto;
+                font-style: italic;
+                background-repeat: no-repeat;
+                background-size: cover;
+                shape-margin: 1rem;
+            }
         }
     }
 
@@ -51,7 +61,7 @@
         display: none;
     }
 
-    @media only screen and (max-width: 375px) {
+    @media only screen and (width <=375px) {
         .mobile {
             display: block;
         }
